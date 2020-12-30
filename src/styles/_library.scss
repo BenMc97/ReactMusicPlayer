@@ -1,0 +1,81 @@
+.library {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 20rem;
+  height: 91.25%;
+  background: #282828;
+  box-shadow: 2px 2px 20px rgb(34, 34, 34);
+  overflow: scroll;
+  transform: translateX(-100%);
+  transition: all 0.5s ease;
+  opacity: 0;
+}
+
+.head {
+  background: #282828;
+  position: sticky;
+  top: 0;
+  h2 {
+    padding: 2rem;
+    color: #20b880;
+    font-family: "Lobster", cursive;
+  }
+}
+
+.library-song {
+  display: flex;
+  align-items: center;
+  padding: 1rem 2rem 1rem 2rem;
+  cursor: pointer;
+  img {
+    width: 30%;
+  }
+  &:hover {
+    background: #20b880;
+  }
+}
+
+.song-description {
+  padding-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  h3 {
+    font-size: 1.1rem;
+    color: white;
+    font-family: "Lato", sans-serif;
+  }
+  h4 {
+    font-size: 0.9rem;
+    color: rgb(119, 115, 115);
+    color: white;
+    font-family: "Lato", sans-serif;
+  }
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(155, 155, 155, 0.5);
+}
+
+*::-webkit-scrollbar {
+  width: 5px;
+  height: 100%;
+}
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: rgba(155, 155, 155, 0.5);
+  border-radius: 20px;
+  border: transparent;
+}
+
+.selected {
+  background: #20b880;
+}
+
+.active-library {
+  transform: translateX(0%);
+  opacity: 1;
+}

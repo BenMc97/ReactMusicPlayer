@@ -1,0 +1,24 @@
+nav {
+  min-height: 20vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  h1 {
+    color: #20b880;
+    font-family: "Lobster", cursive;
+    font-size: 2rem;
+  }
+  button {
+    color: white;
+    background: transparent;
+    border: nones;
+    outline: none;
+    cursor: pointer;
+    border: 2px solid rgb(180, 176, 176);
+    padding: 0.5rem;
+    transition: all 0.3s ease;
+    &:hover {
+      background: #20b880;
+    }
+  }
+}
